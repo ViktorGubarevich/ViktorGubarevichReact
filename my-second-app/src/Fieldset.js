@@ -5,10 +5,9 @@ function Fieldset(props) {
   const inputChange = (event) => props.onChange(event.target.value);
   const value = props.value;
   const currency = props.currency;
-
   return (
     <fieldset className="app-exchanger">
-      <legend className="legend">Enter currency in {props.legend}</legend>
+      <legend className="legend"> Enter currency in {props.legend} </legend>
       <label for={currency}> {currency} </label>
       <input
         id={currency}
@@ -20,4 +19,4 @@ function Fieldset(props) {
   );
 }
 
-export { Fieldset };
+export default Fieldset;
